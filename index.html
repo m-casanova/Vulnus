@@ -1,0 +1,110 @@
+<html>
+<title>Vulnus</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+@font-face {
+  font-family:"test"; font-weight: 200 700;
+  src:url("/Pass-A38/font/Pass_A38.woff2") format("woff2-variations");
+}
+@font-face {
+  font-family:"test2"; font-style: normal;
+  src:url("font/vulnus.woff2") format("woff2");
+}
+body { font-family:"test", sans-serif; font-size:16pt;margin:0;padding:0; background: #f3f1ea }
+div { margin:0; padding:0; }
+
+a { color: #06c }
+
+header { width: 100%; margin:0; padding:0 }
+header > div { width:100%; color: #fff }
+header > div.info { background: #5a5351; }
+header > div.titolo { background: #918583; }
+header > div > div { width: 1180px; margin: 0px auto; padding:0 }
+header div div p { margin:0;padding:5px 10px; font-size: 14pt }
+header div div h1 { margin:0;padding:20px 10px; font-size: 30px; font-weight: 400; color: #fff }
+
+section { width: 1180px; margin:60px auto 60px; padding:0 }
+article { width: 890px; margin: 0px 0 0px 290; padding:0 }
+article p { margin: 5px 10px; padding:0; color: #332925 }
+article p.nota { font-size: 14pt; color: #444 }
+article p.nota a.refn { font-weight: 600; }
+
+
+h2 { font-family:"test2", sans-serif; margin:30px 10px;padding:0; font-size: 48px; font-weight: 400; color: #800 }
+h3 { font-family:"test2", sans-serif; margin:20px 10px;padding:0; font-size: 40px; font-weight: 400; color: #800 }
+h4 { margin:20px 10px;padding:0; font-size: 24px; font-weight: 400; color: #800 }
+
+a.bia { color: #fff }
+a.ref { font-size: 60%; vertical-align: super; font-weight: 700 }
+
+hr { border:0; border-bottom: 1px solid #666; margin: 20px; padding:0 }
+
+.testo { color: #000; width:90%; margin: 20px 10px; border: 1px solid #888; font-family:"test2", sans-serif; font-size:48pt; background: #f3f1ea; padding: 4px; }
+
+footer { padding:0; margin:0; width: 100%; background: #666; color: #fff }
+footer > div { padding:40 0; margin:0 auto; width: 1180px }
+footer p { margin: 0 10px; font-size: 18px }
+
+div.side {width: 249px; margin: 30px 0 0; padding:10px 10px 5px; float:left; border-right:1px solid #555; color: #666 }
+
+.evid { color: #000; background: #e9e5d8 }
+
+.norm { font-family: "test2", sans-serif; font-size: 36px; }
+.ss01 { font-family: "test2", sans-serif; font-feature-settings: 'ss01'; font-size: 36px; color: #800 }
+.swsh { font-family: "test2", sans-serif; font-feature-settings: 'swsh'; font-size: 36px; color: #800 }
+.ss01b { font-family: "test2", sans-serif; font-feature-settings: 'swsh', 'ss01'; font-size: 36px; color: #800 }
+.swshb { font-family: "test2", sans-serif; font-feature-settings: 'swsh'; font-size: 36px }
+
+
+@media only screen and (max-width: 1200px) {
+ header > div > div { width: 100%; }
+ section { width: 100% }
+ article { width: 100%; margin: 0; }
+ footer > div { width: 100% }
+ div.side {display:none }
+}
+</style>
+<body>
+	<header>
+		<div class="info">
+			<div>
+				<p><a href="https://github.com/m-casanova/Vulnus" class="bia">← Github</a></p>
+			</div>
+		</div>
+		<div class="titolo">
+			<div>
+				<h1>Vulnus</h1>
+			</div>
+		</div>
+	</header>
+
+	<section>
+		<div class="side">
+			<p>Una breve descrizione del font "Vulnus"</p>
+		</div>
+		<article>
+			<h2>Un font abbozzato <span class="swsh">÷</span></h2>
+			<p>È possibile testare il font.</p>
+			<textarea rows="5" class="testo">Inserire un testo di prova ÀÈÉÌÒÙàèéìòù"ß</textarea>
+
+			<h3>Descrizione</h3>
+			
+			<p>Il font "Vulnus" è basato su scansioni di <a href="https://fontsinuse.com/typefaces/73656/delitsch-antiqua" target="_blank">Delitsch-Antiqua</a>, realizzato nel 1911.</p>
+			<p>Sono presenti alcune legature ed è possibile attivare caratteristiche opzionali:</p>
+			<p>- <b>swsh</b> (Swash):</p>
+			<p class="norm">D <span class="swsh">D</span> - M <span class="swsh">M</span> - e <span class="swsh">e</span> - n <span class="swsh">n</span> - t <span class="swsh">t</span> - ÷ <span class="swsh">÷</span> -
+			– <span class="swsh">–</span> - — <span class="swsh">—</span></p>
+			<p>- <b>ss01</b> (Stylistic Set 01): versioni alternative</p>
+			<p class="norm">A <span class="ss01">A</span> - E <span class="ss01">E</span> - G <span class="ss01">G</span> - M <span class="ss01">M</span> - N <span class="ss01">N</span> - P <span class="ss01">P</span> -
+			V <span class="ss01">V</span> - W <span class="ss01">W</span></p>
+			<p class="norm">a <span class="ss01">a</span> - m <span class="ss01">m</span> - n <span class="ss01">n</span> - s <span class="ss01">s</span> - u <span class="ss01">u</span> -
+			z <span class="ss01">z</span> - ß <span class="ss01">ß</span> - <span class="swshb">e</span> <span class="ss01b">e</span></p>
+		</article>
+	</section>
+	<footer>
+		<div>
+			<p>&copy; 2023 Michele Casanova
+		</div>
+	</footer>
+<body>
+</html>
